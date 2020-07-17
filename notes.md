@@ -30,9 +30,9 @@ dog
 Comment
     - belongs to user
     - belongs to photo
-    - belongs - dog 
+    - belongs to dog 
     - attributes:
-        1. 
+        1. content
 
 Thursday, 7/16/20:
 
