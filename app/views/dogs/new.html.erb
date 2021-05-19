@@ -1,0 +1,22 @@
+<h1>Please create profile for you dog</h1>
+
+<%=form_for @dog do |f| %>
+    <%= f.label :Name %>
+    <%= f.text_field :Name %>
+    <br>
+    <%= f.label :Age %>
+    <%= f.text_field :Age %>
+    <br>
+    <%= f.label :Breed %>
+    <%= f.text_field :Breed %>
+    <br>
+    <%= f.label :Bio %>
+    <%= f.text_field :Bio %>
+    <br>
+    <%= f.label :Hobbies %>
+    <%= f.text_field :Hobbies %>
+    <br>
+
+    <%= f.submit %>
+
+<% end %>

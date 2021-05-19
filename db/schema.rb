@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_17_035128) do
+ActiveRecord::Schema.define(version: 2020_07_19_220139) do
 
   create_table "comments", force: :cascade do |t|
     t.string "content"
@@ -41,6 +41,7 @@ ActiveRecord::Schema.define(version: 2020_07_17_035128) do
     t.integer "dog_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "star"
     t.index ["dog_id"], name: "index_photos_on_dog_id"
   end
 
@@ -49,6 +50,7 @@ ActiveRecord::Schema.define(version: 2020_07_17_035128) do
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "username"
   end
 
   add_foreign_key "comments", "dogs"
